@@ -102,7 +102,7 @@ function App() {
       <div className="container ">
         <div className="card my-3">
           <div className="card-header text-uppercase text-center bg-primary bg-gradient text-white ">
-            <h3 className="mt-2">Dimensionnement en traction simple</h3>
+            <h3 className="mt-2">Dimensionnement en traction simple (BAEL)</h3>
           </div>
           <div className="card-body">
             {page === 1 ? (
@@ -223,7 +223,7 @@ function App() {
                       onChange={handleCoefChange}
                     >
                       <option value="1">1 pour acier ronds lisses</option>
-                      <option value="1.16">1.6 pour acier HA</option>
+                      <option value="1.6">1.6 pour acier HA</option>
                       <option value="1.8">
                         1.8 pour diamètre {'<'} 0.6mm{' '}
                       </option>
@@ -287,20 +287,20 @@ function App() {
                         <td>
                           ft<sub>28</sub>
                         </td>
-                        <td>{ft28.toFixed(4)} MPa</td>
+                        <td>{ft28.toFixed(8)} MPa</td>
                       </tr>
                       <tr>
                         <td>
                           f<sub>su</sub>
                         </td>
-                        <td>{fsu.toFixed(4)} MPa</td>
+                        <td>{fsu.toFixed(8)} MPa</td>
                       </tr>
                       <tr>
                         <td>
                           A<sub>u</sub>
                         </td>
                         <td>
-                          {Au.toFixed(4)} m<sup>2</sup>
+                          {Au.toFixed(8)} m<sup>2</sup>
                         </td>
                       </tr>
                       <tr>
@@ -308,7 +308,7 @@ function App() {
                           A<sub>ser</sub>
                         </td>
                         <td>
-                          {Aser.toFixed(4)} m<sup>2</sup>
+                          {Aser.toFixed(8)} m<sup>2</sup>
                         </td>
                       </tr>
                       <tr>
@@ -316,7 +316,7 @@ function App() {
                           A<sub>min</sub>
                         </td>
                         <td>
-                          {Amin.toFixed(4)} m<sup>2</sup>
+                          {Amin.toFixed(8)} m<sup>2</sup>
                         </td>
                       </tr>
                       <tr>
@@ -324,12 +324,12 @@ function App() {
                           A<sub>st</sub>
                         </td>
                         <td>
-                          {Ast.toFixed(4)} m<sup>2</sup>
+                          {Ast.toFixed(8)} m<sup>2</sup>
                         </td>
                       </tr>
                       <tr>
                         <td>Contrainte</td>
-                        <td>{contrainte.toFixed(4)}</td>
+                        <td>{contrainte.toFixed(8)}</td>
                       </tr>
                     </tbody>
                   </table>
